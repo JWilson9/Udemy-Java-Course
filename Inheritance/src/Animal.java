@@ -21,8 +21,8 @@ public class Animal {
         System.out.println("Animal.eat() method has just been called");
     }
 
-    public void move(){
-
+    public void move(int speed){
+        System.out.println("Animal.move() called - The animal is moving at" + speed + "speed");
     }
 
     public String getName(){
