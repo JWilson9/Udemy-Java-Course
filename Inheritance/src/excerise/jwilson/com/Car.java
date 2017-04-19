@@ -7,17 +7,28 @@ public class Car extends Vehicle{
 
     private int numberOfWheels;
     private int numberOfDoors;
-    private String name;
-    private int numberOfMiles;
+    private int gears;
+    private boolean isManual;
+    private int currentGear;
 
-    public Car(int changingGears, int handSteering, String manufacturer, int numberOfWheels, int numberOfDoors, String name, int numberOfMiles) {
-        super(changingGears, handSteering, manufacturer);
+    public Car(String name, String size, int numberOfWheels, int numberOfDoors, int gears, boolean isManual) {
+        super(name, size);
         this.numberOfWheels = numberOfWheels;
         this.numberOfDoors = numberOfDoors;
-        this.name = name;
-        this.numberOfMiles = numberOfMiles;
+        this.gears = gears;
+        this.isManual = isManual;
+        this.currentGear = currentGear;
     }
 
+    public void changeGear(int currentGear){
+        this.currentGear = currentGear;
+        System.out.println("Car.setCurrentGear: Current gear is " + this.currentGear);
+    }
+
+    public void changeVelocity(int speed, int direction){
+        System.out.println("Car.changeVelocity(): Velocity is " + speed + "\n" + "direction " + direction);
+        move(speed, direction);
+    }
 
 
 }
