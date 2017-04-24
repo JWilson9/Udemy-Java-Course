@@ -3,6 +3,7 @@
  */
 public class Main {
 
+<<<<<<< HEAD
 	public static void main(String[] args) {
 		Dimensions dimensions = new Dimensions(20, 20, 5);
 		Case theCase = new Case("20a", "Dell", "240", dimensions);
@@ -19,4 +20,9 @@ public class Main {
 		thePC.getTheCase().pressPowerButton();
 
 	}
+=======
+    public static void main(String[] args){
+
+    }
+>>>>>>> origin/master
 }
